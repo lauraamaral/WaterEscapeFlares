@@ -1,0 +1,29 @@
+sName		b                # Body's    https://iopscience.iop.org/article/10.3847/1538-3881/aa984b/pdf
+saModules 	atmesc                  #distorb spinbody poise
+
+# Physical Properties
+dMass                     -2.93292387714033 # M-R relation
+dRadius                   -1.34         # +0.09-0.14
+
+# Orbital Properties
+dEcc                       0              # Nan
+dSemi                        -0.3676991358078587 # Semi-major axis, negative -> AU
+                                                 
+
+
+# ATMESC Properties
+dXFrac                    1.0             # X-Ray/XUV absorption radius (fraction of planet radius)
+dSurfWaterMass           -10.0
+dEnvelopeMass            -0.001           # Initial envelope mass (Earth masses)
+bHaltSurfaceDesiccated    0               # Halt when dry?
+bHaltEnvelopeGone         0               # Halt when evaporated?
+dMinSurfWaterMass        -1.e-5           # Planet is desiccated when water content drops below this (Earth oceans)
+dMinEnvelopeMass         -1.e-5
+sPlanetRadiusModel        LOPEZ12
+bAtmEscAuto               1               # Is the flow radiation-recombination-limited?
+#dThermTemp                212             # +19-17 thermosphere temperature in Kelvin
+bStopWaterLossInHZ         1
+sAtmXAbsEffH2OModel      BOLMONT16
+dAtmXAbsEffH              0.15
+                                                 
+saOutputOrder Time Age XO -SurfWaterMass -EnvelopeMass -OxygenMass -PlanetRadius -HZLimRunaway -HZlimMaxGreenhouse -HZLimRecVenus -HZLimEarlyMars -FXUV -Instellation -RGLimit

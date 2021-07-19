@@ -1,0 +1,10 @@
+srcfolder  ../../examples/HabZone/HZ_calculate/files_to_copy
+destfolder  ../../examples/HabZone/HabZone
+trialname  star
+
+file star.in
+dMass  [0.175,0.625,0.025]
+
+file b.in
+
+file   vpl.in

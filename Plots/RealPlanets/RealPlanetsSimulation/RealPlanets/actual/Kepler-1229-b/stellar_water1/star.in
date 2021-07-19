@@ -1,0 +1,14 @@
+sName        star       # Body's name 
+saModules    stellar
+
+# Physical Parameters
+dMass                     0.480 # +0.030-0.046 https://iopscience.iop.org/article/10.3847/1538-3881/aa984b/pdf
+dAge                      1.0e6 # real AGE = 1.5 +0.8-0.2 https://iopscience.iop.org/article/10.3847/1538-3881/aa984b/pdf
+
+# STELLAR parameters
+sStellarModel             baraffe     # Stellar evolutin model: `baraffe` or `none`
+dSatXUVFrac               1.e-3       # Saturation level of the XUV luminosity
+dRadGyra                  0.5
+
+
+saOutputOrder Time Age -Luminosity -LXUVTot -LXUVStellar

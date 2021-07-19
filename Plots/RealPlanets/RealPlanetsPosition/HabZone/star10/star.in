@@ -1,0 +1,14 @@
+sName        star       # Body's name
+saModules    stellar
+
+# Physical Parameters
+dMass 0.42499999999999993
+dAge          5e8
+
+# STELLAR parameters
+sStellarModel baraffe     # Stellar evolutin model: `baraffe` or `none`
+dSatXUVFrac   1.e-3          # Saturation level of the XUV luminosity
+dRadGyra      0.5
+
+
+saOutputOrder Age -Luminosity HZLimRunaway -HZlimMaxGreenhouse -HZLimRecVenus -HZLimEarlyMars Instellation

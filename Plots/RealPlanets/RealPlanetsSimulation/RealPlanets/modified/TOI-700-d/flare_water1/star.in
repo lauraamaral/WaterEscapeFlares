@@ -1,0 +1,20 @@
+sName        star       # Body's name 
+saModules    stellar flare
+
+# Physical Parameters
+dMass                     0.415 # https://arxiv.org/pdf/2001.00954.pdf
+dAge                      1.0e6 # real AGE > 1.5 Gy (https://arxiv.org/pdf/2001.00952.pdf)
+
+# STELLAR parameters
+sStellarModel             baraffe     # Stellar evolutin model: `baraffe` or `none`
+dSatXUVFrac               1.e-3       # Saturation level of the XUV luminosity
+dRadGyra                  0.5
+
+
+dFlareMinEnergy           1.0e26
+dFlareMaxEnergy           1.0e29
+sFlareFFD                 DAVENPORT
+sFlareBandPass            KEPLER
+
+
+saOutputOrder Time Age -Luminosity -LXUVTot -LXUVFlare -LXUVStellar
