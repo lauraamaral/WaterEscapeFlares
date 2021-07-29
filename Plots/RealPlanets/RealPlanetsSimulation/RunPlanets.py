@@ -1,6 +1,7 @@
 """
 
-Code to generate folders with different semi major axis to which stellar mass
+Code to run the simulations of the four known
+planets show in the Figure 12 of Amaral et al. 2021 paper.
 
 @author: Laura Neves Ribeiro do Amaral
 @email: laura.nevesdoamaral(at)gmail(dot)com

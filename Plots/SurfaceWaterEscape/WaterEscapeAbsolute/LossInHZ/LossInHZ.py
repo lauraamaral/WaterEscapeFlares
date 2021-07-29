@@ -1,3 +1,14 @@
+"""
+This script produces the Figures 8 (top) from Amaral+2021, the
+water escape by flares for stars between 0.2 and 0.6 Msun,
+initial surface water between 1 and 10 TO, and planetary mass
+between 0.5 and 5 Mearth, considering that planets cannot
+lose the water when enters in the HZ, using VPLANET's AtmEsc,
+STELLAR and FLARE modules.
+
+Laura N. R. do Amaral, Universidad Nacional Autónoma de México, 2021
+Date:  July 18th 2021
+"""
 import numpy as np
 import matplotlib as mpl
 import matplotlib.cm as cm
@@ -22,14 +33,14 @@ for i in range(0,range_2):
         for j in range(0,range_1):
               dirs_keys.append(f'{j}_{k}_{i}')            
               
-home = input("What is the directory that the folder water_escape_flares is placed?")
-print(home)              
+#home = input("What is the directory that the folder water_escape_flares is placed?")
+#print(home)              
               
 ########################################################
 ############LOADING DATA #################################              
 ########################################################              
 
-path = home+'/water_escape_flares/Data/'
+path = './'#home+'/water_escape_flares/Data/'
 
 folder = path+'RG_flare.txt'
 WL_flare,WI_flare = np.genfromtxt(folder, usecols = (6,7), unpack=True)

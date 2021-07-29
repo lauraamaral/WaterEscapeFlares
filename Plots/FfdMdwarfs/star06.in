@@ -1,0 +1,19 @@
+#
+sName                   star06
+saModules                 stellar flare
+dMass                     0.6
+dAge                      1e6
+
+sStellarModel             baraffe
+bHaltEndBaraffeGrid       1
+dSatXUVFrac               1.e-3
+dSatXUVTime               -0.1
+dFlareMinEnergy           1.0e26
+dFlareMaxEnergy           1.0e31
+sFlareFFD                DAVENPORT
+sFlareBandPass     KEPLER
+dEnergyBin 5
+
+saOutputOrder Time FlareFreq1 FlareFreq2 FlareFreq3 FlareFreq4  FlareFreq5  FlareFreq6 FlareEnergy1 FlareEnergy2 FlareEnergy3 FlareEnergy4 FlareEnergy5 FlareEnergy6
+
+

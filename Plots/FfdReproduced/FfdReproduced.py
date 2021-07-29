@@ -1,11 +1,12 @@
 """
 This script produces a reproduction of Figure 10
-from Davenport+2019 (Figure 2 from Amaral+2021) ,
+from Davenport+2019 (Figure 4 from Amaral+2021) ,
 the flare frequency distribution of a 0.5 Msun star, 
 using VPLANET's STELLAR and FLARE modules.
 
 @autor: Laura N.  R. do Amaral, Universidad Nacional Autónoma de México, 2021
 @email: laura.nevesdoamaral@gmail.com
+Date: May 2021
 """
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,3 +1,15 @@
+"""
+Script to make the Figure 12 of Amaral et al. 2021 paper.
+
+@author: Laura Neves Ribeiro do Amaral
+@email: laura.nevesdoamaral(at)gmail(dot)com
+
+Date: Oct. 7st, 2020
+
+"""
+
+
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,7 +21,15 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
-path = ['/home/laura/Documentos/water_escape_flares/Plots/RealPlanets/RealPlanetsSimulation_new/realplanets/exoplanet_archive/','/home/laura/Documentos/water_escape_flares/Plots/RealPlanets/RealPlanetsSimulation_new/realplanets/1au_equivalent/']
+home = input("What is the directory that the folder water_escape_flares is placed? Ex: /home/laura/Documentos/water_escape_flares ")
+print(home)              
+              
+########################################################
+############LOADING DATA #################################              
+########################################################              
+
+
+path = [home+'/Plots/RealPlanets/RealPlanetsSimulation_new/realplanets/exoplanet_archive/','/Plots/RealPlanets/RealPlanetsSimulation_new/realplanets/1au_equivalent/']
 
 dir_names = ['Kepler-1229-b/','K2-72-e/','TOI-700-d/','Kepler-1649-c/']
 dir_folder = ['stellar_water0/','stellar_water1/','flare_water0/','flare_water1/']

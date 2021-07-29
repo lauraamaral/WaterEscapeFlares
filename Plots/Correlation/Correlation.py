@@ -1,5 +1,5 @@
 """
-This script produces the Figures 11 from Amaral+2021, the
+This script produces the Figures 13 from Amaral+2021, the
 pearson correlation between stellar and planetary mass and 
 surface water loss percentage.
 

@@ -32,10 +32,18 @@ from multiprocessing import Pool
       
 #############################  criar pastas dentro de HZ_calculate com nome das massas estelares novas ###############################################
 
+vspace_dir = input("What is the directory that the folder '/vplanet-private/vspace/vspace' is placed?")
+print(vspace_dir)              
+              
+########################################################
+############LOADING DATA #################################              
+########################################################              
+
+
 # Copia o arquivo input para dentro do vspace 
-os.system('cp /home/laura/vplanet-private/examples/HabZone/input   /home/laura/vplanet-private/vspace/vspace') 
+os.system('cp ./HZ_calculate/input   '+vspace_dir+'/vspace/vspace') 
 # Entra no vspace
-os.chdir('/home/laura/vplanet-private/vspace/vspace')
+os.chdir('vspace_dir')
 #print(os.getcwd())
 # Cria as pastas dentro de HZ_calculate com os arquivos star.in e vpl.in
 os.system('python3 vspace.py input')
@@ -43,7 +51,7 @@ os.system('python3 vspace.py input')
 #############################################  rodar as simulaçoes da pasta ./HZ_calculate  ####################################################
 
 #Entra na pasta HZ_calculate
-os.chdir('/home/laura/vplanet-private/examples/HabZone/HabZone')
+os.chdir('./HabZone')
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
