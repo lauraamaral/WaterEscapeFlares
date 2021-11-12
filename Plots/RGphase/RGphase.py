@@ -33,7 +33,7 @@ if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
 
 mpl.rcParams['figure.figsize'] = (10,6)
 mpl.rcParams['font.size'] = 20
-plt.rcParams['axes.facecolor']='powderblue'
+plt.rcParams['axes.facecolor']='white'
 
 mpl.rcParams['xtick.major.size'] = 5
 mpl.rcParams['xtick.major.width'] = 2
@@ -77,7 +77,7 @@ for i in range(0,41):
     age.append(wf[(i*91)])
     
 fig, ax = plt.subplots()
-plt.fill_betweenx(stellar_mass,age, interpolate=True,color = 'orange', alpha = 0.99)
+plt.fill_betweenx(stellar_mass,age, interpolate=True,color = 'blue', alpha = 0.3)
 
 a = [0.5,1,1.5]
 
@@ -88,6 +88,7 @@ plt.ylim(0.2,0.6)
 plt.xlim(0,2e8)
 plt.xlabel(r'Time (years)', fontsize = 25)
 plt.ylabel(r'Stellar Mass (M$_{\odot}$)', fontsize = 25)
+
 
 # Save figure
 if (sys.argv[1] == 'pdf'):

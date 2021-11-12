@@ -122,7 +122,7 @@ for i in range(0,10):
            
 X, Y = np.meshgrid(water_init,Masses)
 
-fig, axes = plt.subplots(figsize=(25,14), nrows=2, ncols=5, sharey=True ,sharex=True)
+fig, axes = plt.subplots(figsize=(28,21), nrows=2, ncols=5, sharey=True ,sharex=True)
 
 fig.text(0.5, -0.03, 'Initial Water Content (TO)', ha='center',  fontsize = 40)
 fig.text(-0.025, 0.5, 'Stellar Mass (M$_{\odot}$)', va='center', rotation='vertical', fontsize = 44)
@@ -223,6 +223,11 @@ levels = np.linspace(vmin,vmax,1000)
 for j,i in enumerate(index):
     imf = axes[0,j].contourf(dtf[i][0], dtf[i][1], dtf[i][2],norm=divnorm,levels=levels,vmax=vmax,vmin=vmin, cmap = 'bwr',contours_showlines=False)
     ims = axes[1,j].contourf(dts[i][0], dts[i][1], dts[i][2],norm=divnorm,levels=levels,vmax=vmax,vmin=vmin,  cmap = 'bwr',contours_showlines=False)
+    for c in imf.collections:
+          c.set_edgecolor("face")
+    for c in ims.collections:
+          c.set_edgecolor("face")
+
 
 for i in range(0,5):
     # planetary mass
@@ -274,4 +279,4 @@ ax.yaxis.set_major_locator(MaxNLocator(4))
 ax.xaxis.set_major_locator(MaxNLocator(5)) 
 
 
-plt.savefig('OxygenTot.pdf', bbox_inches="tight", dpi=300)
+plt.savefig('OxygenBuildUp.pdf', bbox_inches="tight", dpi=300)

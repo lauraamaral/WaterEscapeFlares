@@ -196,7 +196,7 @@ maximum = [max(Af[0]),max(Af[1]),max(Af[3]),max(Af[5]),max(Af[9]),max(As[0]),max
 round_to_tenths = ['max '+str(round(num, 2))+'%' for num in maximum]
 print(round_to_tenths)
 
-fig, axes = plt.subplots(figsize=(25,14), nrows=2, ncols=5, sharey=True ,sharex=True)
+fig, axes = plt.subplots(figsize=(28,21), nrows=2, ncols=5, sharey=True ,sharex=True)
 
 
 fig.text(0.5, -0.03, 'Initial Water Content (TO)', ha='center',  fontsize = 40)
@@ -281,6 +281,11 @@ levels = np.linspace(vmin,vmax,1000)
 for j,i in enumerate(index):
     imf = axes[0,j].contourf(dtf[i][0], dtf[i][1], dtf[i][2],levels=levels,vmax=vmax,vmin=vmin, cmap = 'cubehelix_r',contours_showlines=False)
     ims = axes[1,j].contourf(dts[i][0], dts[i][1], dts[i][2],levels=levels,vmax=vmax,vmin=vmin,  cmap = 'cubehelix_r',contours_showlines=False)
+    for c in imf.collections:
+          c.set_edgecolor("face")
+    for c in ims.collections:
+          c.set_edgecolor("face")
+
 
     
 for i in range(0,5):
@@ -317,6 +322,8 @@ axes[0,1].scatter(1.2,0.21,marker= '^', edgecolor = 'k',color = 'gold',s = 605, 
 axes[0,1].scatter(9.8,0.21,marker= '^', edgecolor = 'k',color = 'gold',s = 605, label= 'Kepler 1649c')
 axes[1,1].scatter(1.2,0.21,marker= '^', edgecolor = 'k',color = 'gold',s = 605, label= 'Kepler 1649c')
 axes[1,1].scatter(9.8,0.21,marker= '^', edgecolor = 'k',color = 'gold',s = 605, label= 'Kepler 1649c')
+
+
 
 
 for ax in axes.flatten():

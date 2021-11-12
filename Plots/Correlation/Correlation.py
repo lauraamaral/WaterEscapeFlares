@@ -158,21 +158,24 @@ mpl.rcParams['ytick.right'] = True
 
 mpl.rcParams['font.size'] = 30
 
-fig, ax = plt.subplots(nrows=1, ncols=4, sharey=True ,sharex=True, figsize = (16,4))
 
-lab = ('stellar\nmass', 'planetary\nmass', 'H2O loss  \npercentage')
+fig, ax = plt.subplots(nrows=1, ncols=4, sharey=True ,sharex=False, figsize = (16,4))
 
-im1 = sns.heatmap(corr_matrix1, ax=ax[0],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
-           xticklabels=lab, yticklabels=lab)
+lab1 = ('stellar\nmass','planetary\nmass')
 
-im2 = sns.heatmap(corr_matrix2, ax=ax[1],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
-           xticklabels=lab, yticklabels=lab)
+lab2 = ('planetary\nmass','H2O loss  \npercentage')
 
-im3 = sns.heatmap(corr_matrix3, ax=ax[2],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
-           xticklabels=lab, yticklabels=lab)
+im1 = sns.heatmap(corr_matrix1[1:,:2],  ax=ax[0],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
+           xticklabels=lab1, yticklabels=lab2)
 
-im4 = sns.heatmap(corr_matrix4, ax=ax[3],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
-           xticklabels=lab, yticklabels=lab, annot_kws = {'fontsize' : 30})
+im2 = sns.heatmap(corr_matrix2[1:,:2], ax=ax[1],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
+           xticklabels=lab1, yticklabels=lab2)
+
+im3 = sns.heatmap(corr_matrix3[1:,:2], ax=ax[2],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
+           xticklabels=lab1, yticklabels=lab2)
+
+im4 = sns.heatmap(corr_matrix4[1:,:2], ax=ax[3],cmap='RdYlBu',annot=True,cbar = False,vmin=-1,vmax=1,
+           xticklabels=lab1, yticklabels=lab2, annot_kws = {'fontsize' : 30})
 
 cbar_ax = fig.add_axes([0.96, 0.07, 0.03, 0.853])
 
@@ -190,9 +193,11 @@ ax[3].set_title('d. STELLAR + FLARE\n RG phase during PMS', fontsize =24)
 
 im = [im1,im2,im3,im4]
 
-for i in im:
-    i.set_xticklabels(i.get_xmajorticklabels(), fontsize = 22, rotation = 90)
-    i.set_yticklabels(i.get_xmajorticklabels(), fontsize = 22,rotation = 0)
+#for i in im:
+ #   i.set_xticklabels(i.get_xmajorticklabels(), fontsize = 22, rotation = 90)
+   # i.set_yticklabels(i.get_xmajorticklabels(), fontsize = 22,rotation = 0)
+
+
 
 # Save figure
 if (sys.argv[1] == 'pdf'):

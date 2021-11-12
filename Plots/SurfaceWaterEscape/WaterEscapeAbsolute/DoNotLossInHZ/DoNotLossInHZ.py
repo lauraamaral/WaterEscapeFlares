@@ -172,7 +172,7 @@ for i in range(0,10):
 X, Y = np.meshgrid(water_init,Masses)
 
 
-fig, axes = plt.subplots(nrows=5, ncols=2, sharey=True ,sharex=True)
+fig, axes = plt.subplots(figsize=(12,8),nrows=5, ncols=2, sharey=True ,sharex=True)
 divnorm = mpl.colors.Normalize(vmin=0, vmax=max(wf))
 v = np.linspace(0,3.5, 8, endpoint=True) # define quais valores dos datos reais vão aparecer no colorbar
 
@@ -223,14 +223,14 @@ X, Y = np.meshgrid(water_init,Masses)
 
 
 
-fig.text(0.5, 0.0, 'Initial Water Content (TO)', ha='center',  fontsize = 12)
-fig.text(0.0, 0.5, 'Stellar Mass (M$_{\odot})$', va='center', rotation='vertical', fontsize = 12)
+fig.text(0.5, 0.0, 'Initial Water Content (TO)', ha='center',  fontsize = 16)
+fig.text(0.0, 0.5, 'Stellar Mass (M$_{\odot})$', va='center', rotation='vertical', fontsize = 16)
 
 
-mpl.rcParams['font.size'] = 16;
-mpl.rcParams.update({'font.size': 16})
+mpl.rcParams['font.size'] = 18;
+mpl.rcParams.update({'font.size': 18})
 
-mpl.rcParams['figure.figsize'] = (15,10); mpl.rcParams['xtick.major.size'] = 5
+mpl.rcParams['xtick.major.size'] = 5
 mpl.rcParams['xtick.major.width'] = 1; mpl.rcParams['ytick.major.size'] = 4;mpl.rcParams['ytick.major.width'] = 1
 mpl.rcParams['ytick.minor.size'] = 4; mpl.rcParams['xtick.direction'] = 'in';mpl.rcParams['ytick.direction'] = 'in'
 mpl.rcParams['xtick.top'] = True;mpl.rcParams['xtick.bottom'] = True; mpl.rcParams['ytick.right'] = True
@@ -274,20 +274,20 @@ CSf.append(axes[4,1].contour(X, Y,Zf[9], levels, colors=  ('black','black','k'))
 #cmap = sns.palplot(sns.cubehelix_palette(start=2.8, rot=.1))
 
 for i in range(0,5):
-    plt.clabel(CSs[i],CSs[i].levels[0::], inline=True, fontsize=8,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
-    plt.clabel(CSf[i],CSf[i].levels[0::], inline=True, fontsize=8,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+    plt.clabel(CSs[i],CSs[i].levels[0::], inline=True, fontsize=12,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+    plt.clabel(CSf[i],CSf[i].levels[0::], inline=True, fontsize=12,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
     # stellar plots
-    axes[i,0].annotate(planet[i], xy=(8.9, 0.23),  fontsize = 6, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
+    axes[i,0].annotate(planet[i], xy=(8.7, 0.23),  fontsize = 12, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
     # flare plots
-    axes[i,1].annotate(planet[i], xy=(8.9, 0.23),  fontsize = 6, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
+    axes[i,1].annotate(planet[i], xy=(8.7, 0.23),  fontsize = 12, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
     #maximum values
-    axes[i,0].annotate(round_to_tenths[i+5], xy=(1.1, 0.54),  fontsize = 6, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
-    axes[i,1].annotate(round_to_tenths[i], xy=(1.1, 0.54),  fontsize = 6, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))   
+    axes[i,0].annotate(round_to_tenths[i+5], xy=(1.1, 0.54),  fontsize = 12, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))
+    axes[i,1].annotate(round_to_tenths[i], xy=(1.1, 0.54),  fontsize = 12, color = 'black', fontweight='bold',bbox=dict(boxstyle='round,pad=0.1', fc='white', edgecolor = 'white', alpha=0.9))   
     
     
     
-plt.clabel(CSs[0],CSs[0].levels[3:4], inline=True, fontsize=16,fmt= '%1.0f',inline_spacing= 5.5)
-plt.clabel(CSs[1],CSs[1].levels[3:4], inline=True, fontsize=16,fmt= '%1.0f',inline_spacing= 5.5)
+plt.clabel(CSs[0],CSs[0].levels[3:4], inline=True, fontsize=18,fmt= '%1.0f',inline_spacing= 5.5)
+plt.clabel(CSs[1],CSs[1].levels[3:4], inline=True, fontsize=18,fmt= '%1.0f',inline_spacing= 5.5)
   
 index = [0,1,3,5,9]
 
@@ -301,7 +301,12 @@ levels = np.linspace(vmin,vmax,100)
 for j,i in enumerate(index):
     imf = axes[j,1].contourf(dtf[i][0], dtf[i][1], dtf[i][2],levels=levels,vmax=vmax,vmin=vmin, cmap = 'plasma_r',contours_showlines=False)
     ims = axes[j,0].contourf(dts[i][0], dts[i][1], dts[i][2],levels=levels,vmax=vmax,vmin=vmin,  cmap = 'plasma_r',contours_showlines=False)
-    
+    for c in imf.collections:
+          c.set_edgecolor("face")
+    for c in ims.collections:
+          c.set_edgecolor("face")
+
+
 #2.93292387714033,1.34  
 axes[3,0].scatter(1.2,0.480,marker= 'o', edgecolor = 'k',color = 'red', s = 50, label= 'Kepler 1229b') 
 axes[3,0].scatter(9.8,0.480,marker= 'o', edgecolor = 'k',color = 'red', s = 50, label= 'Kepler 1229b') 
@@ -329,18 +334,21 @@ axes[1,1].scatter(9.8,0.22,marker= '^', edgecolor = 'k',color = 'gold',s = 100, 
 
 
 water = [1,2,3,4,5,6,7,8,9,10]
-axes[0,1].set_title('AtmEsc+Stellar+Flare', fontsize = 12)
-axes[0,0].set_title('AtmEsc+Stellar', fontsize = 12)
+axes[0,1].set_title('AtmEsc+Stellar+Flare', fontsize = 16)
+axes[0,0].set_title('AtmEsc+Stellar', fontsize = 16)
 fig.tight_layout(pad = 10)
-fig.subplots_adjust(right = 1.0, left = 0.08, bottom = 0.08, top = 0.91, wspace = 0.03, hspace =0.2 )
-cbar_ax = fig.add_axes([1.01, 0.08, 0.03, 0.83])
+fig.subplots_adjust(right = 1.0, left = 0.055, bottom = 0.06, top = 0.91, wspace = 0.03, hspace =0.2 )
+cbar_ax = fig.add_axes([1.01, 0.049, 0.03, 0.861])
 fig.colorbar(imfwater, cax=cbar_ax, orientation = 'vertical', ticks =v)
-cbar_ax.set_ylabel('Surface water escaped (TO)', fontsize = 12)
+cbar_ax.set_ylabel('Surface water escaped (TO)', fontsize = 16)
 plt.xticks(ticks=water)
 
 for t in cbar_ax.axes.get_yticklabels():
-     t.set_fontsize(10)
+     t.set_fontsize(14)
 
+for ax in axes.flatten():
+    for tick in ax.xaxis.get_major_ticks() + ax.yaxis.get_major_ticks():
+        tick.label.set_fontsize(14)
 
 axes[4,0].xaxis.set_major_locator(MaxNLocator(10)) 
 axes[0,0].yaxis.set_major_locator(MaxNLocator(4)) 
