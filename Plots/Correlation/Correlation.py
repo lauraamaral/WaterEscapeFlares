@@ -21,95 +21,93 @@ import os
 import subprocess
 plt.style.use('ggplot')
 
+f1 = './rgstellar.txt'
+f2 = './rgflare.txt'
+f3 = './stopstellar.txt'
+f4 = './stopflare.txt'
 
+star1 = np.genfromtxt(f1, usecols=0 ,unpack=True)
+water1 = np.genfromtxt(f1, usecols=1 ,unpack=True)
+planet1 = np.genfromtxt(f1, usecols=2 ,unpack=True)  
+waterfinal1 = np.genfromtxt(f1, usecols=3 ,unpack=True)
 
-f1 = './dataframe1.txt'
-f2 = './dataframe2.txt'
-f3 = './dataframe3.txt'
-f4 = './dataframe4.txt'
+star2 = np.genfromtxt(f2, usecols=0 ,unpack=True)
+water2 = np.genfromtxt(f2, usecols=1 ,unpack=True)
+planet2 = np.genfromtxt(f2, usecols=2,unpack=True)
+waterfinal2 = np.genfromtxt(f2, usecols=3 ,unpack=True)
 
-w1 = np.genfromtxt(f1, usecols=1 ,unpack=True)
-x1 = np.genfromtxt(f1, usecols=3 ,unpack=True)  
-y1 = np.genfromtxt(f1, usecols=0 ,unpack=True)
-z1 = np.genfromtxt(f1, usecols=2 ,unpack=True)
+star3 = np.genfromtxt(f3, usecols=0 ,unpack=True)
+water3 = np.genfromtxt(f3, usecols=1 ,unpack=True)
+planet3 = np.genfromtxt(f3, usecols=2,unpack=True)
+waterfinal3 = np.genfromtxt(f3, usecols=3 ,unpack=True)
 
-w2 = np.genfromtxt(f2, usecols=1 ,unpack=True)
-x2 = np.genfromtxt(f2, usecols=3 ,unpack=True)
-y2 = np.genfromtxt(f2, usecols=0 ,unpack=True)
-z2 = np.genfromtxt(f2, usecols=2 ,unpack=True)
+star4 = np.genfromtxt(f4, usecols=0 ,unpack=True)
+water4 = np.genfromtxt(f4, usecols=1 ,unpack=True)
+planet4 = np.genfromtxt(f4, usecols=2,unpack=True)
+waterfinal4 = np.genfromtxt(f4, usecols=3 ,unpack=True)
 
-w3 = np.genfromtxt(f3, usecols=1 ,unpack=True)
-x3 = np.genfromtxt(f3, usecols=3 ,unpack=True)
-y3 = np.genfromtxt(f3, usecols=0 ,unpack=True)
-z3 = np.genfromtxt(f3, usecols=2 ,unpack=True)
+a1 = ((water1-waterfinal1)/water1)*100
 
-w4 = np.genfromtxt(f4, usecols=1 ,unpack=True)
-x4 = np.genfromtxt(f4, usecols=3 ,unpack=True)
-y4 = np.genfromtxt(f4, usecols=0 ,unpack=True)
-z4 = np.genfromtxt(f4, usecols=2 ,unpack=True)
-
-a1 = ((w1-x1)/w1)*100
-
-w1.tolist()
-x1.tolist()
-y1.tolist()
-z1.tolist()
+water1.tolist()
+waterfinal1.tolist()
+star1.tolist()
+planet1.tolist()
 a1.tolist()
 
-a2 = ((w2-x2)/w2)*100
+a2 = ((water2-waterfinal2)/water2)*100
 
-w2.tolist()
-x2.tolist()
-y2.tolist()
-z2.tolist()
+water2.tolist()
+waterfinal2.tolist()
+star2.tolist()
+planet2.tolist()
 a2.tolist()
 
-a3 = ((w3-x3)/w3)*100
+a3 = ((water3-waterfinal3)/water3)*100
 
-w3.tolist()
-x3.tolist()
-y3.tolist()
-z3.tolist()
+water3.tolist()
+waterfinal3.tolist()
+star3.tolist()
+planet3.tolist()
 a3.tolist()
 
-a4 = ((w4-x4)/w4)*100
+a4 = ((water4-waterfinal4)/water4)*100
 
-w4.tolist()
-x4.tolist()
-y4.tolist()
-z4.tolist()
+water4.tolist()
+waterfinal4.tolist()
+star4.tolist()
+planet4.tolist()
 a4.tolist()
 
 
 dataset1 = { 
-    'W1':w1,
-    'X1':x1,
-    'Y1':y1,
-    'Z1':z1,
+    'waterfinal1':waterfinal1,
+    'water1':water1,
+    'star1':star1,
+    'planet1':planet1,
     'A1':a1
 }
 
 dataset2= { 
-    'W2':w2,
-    'X2':x2,
-    'Y2':y2,
-    'Z2':z2,
+    'waterfinal2':waterfinal2,
+    'water2':water2,
+    'star2':star2,
+    'planet2':planet2,
     'A2':a2
 }
 
 dataset3 = { 
-    'W3':w3,
-    'X3':x3,
-    'Y3':y3,
-    'Z3':z3,
+    'waterfinal3':waterfinal3,
+    'water3':water3,
+    'star3':star3,
+    'planet3':planet3,
     'A3':a3
 }
 
 dataset4 = { 
-    'W4':w4,
-    'X4':x4,
-    'Y4':y4,
-    'Z4':z4,
+    'waterfinal4':waterfinal4,
+    'water4':water4,
+    'star4':star4,
+    'planet4':planet4,
     'A4':a4
 }
 
@@ -124,19 +122,19 @@ dataset3.corr()
 dataset4.corr()
 
 
-xyz1 = np.array([y1,z1,a1])
+xyz1 = np.array([star1,planet1,a1])
 corr_matrix1 = np.corrcoef(xyz1).round(decimals=4)
 corr_matrix1
 
-xyz2 = np.array([y2,z2,a2])
+xyz2 = np.array([star2,planet2,a2])
 corr_matrix2 = np.corrcoef(xyz2).round(decimals=4)
 corr_matrix2
 
-xyz3 = np.array([y3,z3,a3])
+xyz3 = np.array([star3,planet3,a3])
 corr_matrix3 = np.corrcoef(xyz3).round(decimals=4)
 corr_matrix3
 
-xyz4 = np.array([y4,z4,a4])
+xyz4 = np.array([star4,planet4,a4])
 corr_matrix4 = np.corrcoef(xyz4).round(decimals=4)
 corr_matrix4
 

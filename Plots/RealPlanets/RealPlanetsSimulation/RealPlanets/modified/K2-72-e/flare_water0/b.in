@@ -7,7 +7,7 @@ dRadius                   -1.29         #  +0.14 -0.13
 
 # Orbital Properties
 dEcc                       0.11         # +0.198676 -0.086832
-dSemi                        -0.10246887326828134 # Semi-major axis, negative -> AU
+dSemi                        -0.10246882200512344 # Semi-major axis, negative -> AU
                                                  
 
 

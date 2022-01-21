@@ -42,22 +42,22 @@ for i in range(0,range_2):
 
 path = './'#home+'/water_escape_flares/Data/'
 
-folder = path+'RG_flare.txt'
+folder = path+'flareRG.txt'
 WL_flare,WI_flare = np.genfromtxt(folder, usecols = (6,7), unpack=True)
 outputs_WI_flare = dict(zip(dirs_keys,WI_flare))
 outputs_WL_flare = dict(zip(dirs_keys,WL_flare))
 
-folder = path+'stop_flare.txt'
+folder = path+'flareStopRG.txt'
 WL_flare,WI_flare = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_flare_stop = dict(zip(dirs_keys,WI_flare))
 outputs_WL_flare_stop = dict(zip(dirs_keys,WL_flare))
 
-folder = path+'stop_stellar.txt'
+folder = path+'stellarStopRG.txt'
 WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_stellar_stop = dict(zip(dirs_keys,WI_stellar))
 outputs_WL_stellar_stop = dict(zip(dirs_keys,WL_stellar))
 
-folder = path+'RG_stellar.txt'
+folder = path+'stellarRG.txt'
 WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_stellar = dict(zip(dirs_keys,WI_stellar))
 outputs_WL_stellar = dict(zip(dirs_keys,WL_stellar))

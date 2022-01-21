@@ -39,22 +39,22 @@ for i in range(0,range_2):
 
 path ='./'
 
-folder = path+'RG_flare.txt'
+folder = path+'flareRG.txt'
 OXL_flare ,OXI_flare= np.genfromtxt(folder, usecols = (3,4), unpack=True)
 outputs_OXI_flare = dict(zip(dirs_keys,OXI_flare))
 outputs_OXL_flare = dict(zip(dirs_keys,OXL_flare))
 
-folder = path+'stop_flare.txt'
+folder = path+'flareStopRG.txt'
 OXL_flare,OXI_flare = np.genfromtxt(folder,usecols =  (3,4), unpack=True)
 outputs_OXI_flare_stop = dict(zip(dirs_keys,OXI_flare))
 outputs_OXL_flare_stop = dict(zip(dirs_keys,OXL_flare))
 
-folder = path+'stop_stellar.txt'
+folder = path+'stellarStopRG.txt'
 OXL_stellar,OXI_stellar = np.genfromtxt(folder,usecols = (3,4), unpack=True)
 outputs_OXI_stellar_stop = dict(zip(dirs_keys,OXI_stellar))
 outputs_OXL_stellar_stop = dict(zip(dirs_keys,OXL_stellar))
 
-folder = path+'RG_stellar.txt'
+folder = path+'stellarRG.txt'
 OXL_stellar,OXI_stellar = np.genfromtxt(folder,usecols = (3,4), unpack=True)
 outputs_OXI_stellar = dict(zip(dirs_keys,OXI_stellar))
 outputs_OXL_stellar = dict(zip(dirs_keys,OXL_stellar))

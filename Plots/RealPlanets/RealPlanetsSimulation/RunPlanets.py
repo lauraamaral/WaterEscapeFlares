@@ -40,6 +40,8 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 os.chdir(dir_path)
 
+print(1)
+
 def run_vplanet(dir):
          print("\nRunning simulation in %s directory..." % dir)
          os.chdir(dir)
@@ -50,7 +52,7 @@ def run_vplanet(dir):
 
 print("Parallelizing")
 
-
+print(2)
 pool = mp.Pool(mp.cpu_count())
 print(pool)
 
@@ -61,8 +63,11 @@ pool.close()
 #Enter in the folder to calculate the semi major axis value
 semi_mod = []
 
+print(dir)
+
 for dir in planets:
              os.chdir(dir)
+             print(dir)
              folder = './system.planet.forward'
              A = np.genfromtxt(folder, usecols=2, unpack=True)
              print(A)
@@ -78,6 +83,7 @@ print(semi_mod)
 semi_actual = [0.3006,0.106,0.1633,0.0827,0.3006,0.106,0.1633,0.0827,0.3006,0.106,0.1633,0.0827,0.3006,0.106,0.1633,0.0827]
 semi_dirs_mod = []
 semi_dirs_actual = []
+print(4)
 
 for i in range(len(semi_mod)):
                      semi_dirs_mod.append((semi_mod[i],dirs_mod[i]))

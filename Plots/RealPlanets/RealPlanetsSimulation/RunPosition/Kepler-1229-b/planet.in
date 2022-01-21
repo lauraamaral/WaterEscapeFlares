@@ -1,4 +1,4 @@
-sName		b                # Body's    https://iopscience.iop.org/article/10.3847/1538-3881/aa984b/pdf
+sName		planet                # Body's    https://iopscience.iop.org/article/10.3847/1538-3881/aa984b/pdf
 saModules 	atmesc                  #distorb spinbody poise
 
 # Physical Properties

@@ -1,4 +1,4 @@
-sName		b                # Body's name https://arxiv.org/pdf/2001.00954.pdf
+sName		planet                # Body's name https://arxiv.org/pdf/2001.00954.pdf
 saModules 	atmesc                  #distorb spinbody poise
 
 # Physical Properties

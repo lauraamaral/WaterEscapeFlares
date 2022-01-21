@@ -42,22 +42,22 @@ for i in range(0,range_2):
 
 path = './'#home+'/water_escape_flares/Data/'
 
-folder = path+'RG_flare.txt'
+folder = path+'flareRG.txt'
 WL_flare,WI_flare = np.genfromtxt(folder, usecols = (6,7), unpack=True)
 outputs_WI_flare = dict(zip(dirs_keys,WI_flare))
 outputs_WL_flare = dict(zip(dirs_keys,WL_flare))
 
-folder = path+'stop_flare.txt'
+folder = path+'flareStopRG.txt'
 WL_flare,WI_flare = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_flare_stop = dict(zip(dirs_keys,WI_flare))
 outputs_WL_flare_stop = dict(zip(dirs_keys,WL_flare))
 
-folder = path+'stop_stellar.txt'
+folder = path+'stellarStopRG.txt'
 WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_stellar_stop = dict(zip(dirs_keys,WI_stellar))
 outputs_WL_stellar_stop = dict(zip(dirs_keys,WL_stellar))
 
-folder = path+'RG_stellar.txt'
+folder = path+'stellarRG.txt'
 WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_stellar = dict(zip(dirs_keys,WI_stellar))
 outputs_WL_stellar = dict(zip(dirs_keys,WL_stellar))
@@ -84,7 +84,7 @@ for ik in keys.keys():
 water_esc_abs = {}
 for ik in keys.keys():
         water_esc_abs[ik] = water_esc_flare[ik]-water_esc_stellar[ik]
- 
+
 water_escP = {}
 for ik in keys.keys():
         water_escP[ik] = water_escP_flare[ik] - water_escP_stellar[ik]
@@ -98,7 +98,7 @@ for ik in keys.keys():
 water_escP_flare_stop = {}
 for ik in keys.keys():
         water_escP_flare_stop[ik] = (water_esc_flare_stop[ik]*100)/outputs_WI_flare_stop[ik]
- 
+    
 water_esc_stellar_stop = {}
 for ik in keys.keys():
         water_esc_stellar_stop[ik] = outputs_WI_stellar_stop[ik]-outputs_WL_stellar_stop[ik]
@@ -191,7 +191,7 @@ mpl.rcParams['ytick.major.width'] = 2
 mpl.rcParams['xtick.direction'] = 'in';mpl.rcParams['ytick.direction'] = 'in'
 mpl.rcParams['xtick.top'] = True;mpl.rcParams['xtick.bottom'] = True; mpl.rcParams['ytick.right'] = True
 
-maximum = [max(Af[0]),max(Af[1]),max(Af[3]),max(Af[5]),max(Af[9]),max(As[0]),max(As[1]),max(As[3]),max(As[5]),max(As[9])]
+maximum = [max(As[0]),max(As[1]),max(As[3]),max(As[5]),max(As[9]),max(Af[0]),max(Af[1]),max(Af[3]),max(Af[5]),max(Af[9])]
 
 round_to_tenths = ['max '+str(round(num, 2))+'%' for num in maximum]
 print(round_to_tenths)
@@ -205,10 +205,9 @@ fig.text(0.5,0.51, 'Runaway Greenhouse phase during PMS', ha='center',  fontsize
 fig.text(0.5,1.01, 'Runaway Greenhouse phase 1 Gyr', ha='center',  fontsize = 40)
 
 
-divnorm = mpl.colors.Normalize(vmin=0, vmax=max(wf))
 v = np.linspace(0, 2,11)
 
-vv = [0,10,30,50,70,90]
+vv = [1,10]
 levels = np.array(vv)
 
 vv = [0,1,5,10]
@@ -220,40 +219,27 @@ levels2 = np.array(vv)
 vv = [0,10,20,30,40,50,60]
 levels3 = np.array(vv)
 
-vv = [0,10,40]
+vv = [0,10,30,50,90]
 levels4 = np.array(vv)
 
-vv = [0,10,30,50,90]
+vv = [0,1,5,10,20,50,90]
 levels5 = np.array(vv)
 
 
 CSf = []
 
-CSf.append(axes[0,0].contour(X, Y,Zf[0], levels1,colors= 'k'))
+CSf.append(axes[0,0].contour(X, Y,Zf[0], levels,colors= 'k'))
 CSf.append(axes[0,1].contour(X, Y,Zf[1], levels3, colors= 'k'))
 CSf.append(axes[0,2].contour(X, Y,Zf[3], levels2, colors=('k', 'k', 'k', 'k','k','k','k','k','k')))
-CSf.append(axes[0,3].contour(X, Y,Zf[5], levels, colors=('k', 'k', 'k', 'k','k','k')))
+CSf.append(axes[0,3].contour(X, Y,Zf[5], levels5, colors=('k', 'k', 'k', 'k','k','k')))
 CSf.append(axes[0,4].contour(X, Y,Zf[9], levels5, colors=('k', 'k', 'k', 'k','k','k')))
 
 CSf.append(axes[1,0].contour(X, Y,Zs[0], levels1, colors=('k', 'k', 'k', 'k','k','k')))
 CSf.append(axes[1,1].contour(X, Y,Zs[1], levels1, colors=('k', 'k', 'k', 'k','k','k')))
 CSf.append(axes[1,2].contour(X, Y,Zs[3], levels2, colors=('k', 'k', 'k', 'k','k','k')))
-CSf.append(axes[1,3].contour(X, Y,Zs[5], levels4, colors=('k', 'k', 'k', 'k','k','k')))
-CSf.append(axes[1,4].contour(X, Y,Zs[9], levels = 0, colors=('k', 'k', 'k', 'k','k','k')))
+CSf.append(axes[1,3].contour(X, Y,Zs[5], levels5, colors=('k', 'k', 'k', 'k','k','k')))
+CSf.append(axes[1,4].contour(X, Y,Zs[9], levels4, colors=('k', 'k', 'k', 'k','k','k')))
 
-
-manual_0 = [(1.1, 0.22), (2,0.5),(1.5,0.35),(6.5,0.4)]
-manual_1 = [(1.5,0.35), (3.1, 0.31), (5, 0.25),(2.5,0.45), (2.5, 0.5),(9,0.3),(2,0.58)]
-manual_2 = [(2.0,0.4), (3,0.35),(5,0.3),(7, 0.41),  (1.2,0.45),(9,0.55)]
-manual_3 = [(1.1,0.32),(6,0.45), (5.2,0.28),(3,0.25),(2,0.28)]
-manual_4 = [(1.5,0.22),(2.5,0.22),(4.1,0.25),(5,0.5),(5,0.31)]
-
-
-manual_5 = [ (4, 0.475), (3, 0.56)]
-manual_6 = [(3.1, 0.31), (8.7,0.28),(5,0.4),(1.1,0.37),(5,0.5)]
-manual_7 = [(1.3, 0.25), (5,0.3),(2.5,0.25),(5,0.35),(3.5,0.28)]
-manual_8 = [(3,0.22),(4,0.25),(1.1,0.2)]
-manual_9 = [(1.5,0.22),(2.5,0.22),(3,0.22),(4.1,0.25),(5,0.5),(5,0.31)]
 
 dtf = {}
         
@@ -267,10 +253,21 @@ for ik, val in enumerate(Zs1):
     
 planet = [r'0.5 M$_{\oplus}$', r'1 M$_{\oplus}$',r'2 M$_{\oplus}$', r'3 M$_{\oplus}$', r'5 M$_{\oplus}$']
 
-contour_lines = [manual_0,manual_1,manual_2,manual_3,manual_4,manual_5,manual_6,manual_7,manual_8,manual_9]
 
-for i in range(0,9):
-    plt.clabel(CSf[i],CSf[i].levels[0::],manual = contour_lines[i],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+manual_1 = [(3.1, 0.31), (8.7,0.28),(5,0.4),(1.1,0.37),(2,0.5),(2,0.56),(3,0.45)]
+manual_2 = [(2.0,0.4), (3,0.35),(5,0.3),(7, 0.41), (1.2,0.45),(9,0.55)]
+
+plt.clabel(CSf[0],CSf[0].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[1],CSf[1].levels[0::],manual = manual_1,inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[2],CSf[2].levels[0::],manual = manual_2,inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[3],CSf[3].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[4],CSf[4].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[5],CSf[5].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[6],CSf[6].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[7],CSf[7].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[8],CSf[8].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+plt.clabel(CSf[9],CSf[9].levels[0::],inline=True, fontsize=25,fmt= '%1.0f'+str('%%'),inline_spacing= 5.5)
+
 
 index = [0,1,3,5,9]
 
@@ -344,3 +341,4 @@ ax.xaxis.set_major_locator(MaxNLocator(5))
 
 
 plt.savefig('WaterEscapeTot.pdf', bbox_inches="tight", dpi=300)
+

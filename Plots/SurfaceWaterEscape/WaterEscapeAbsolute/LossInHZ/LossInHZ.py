@@ -33,31 +33,18 @@ for i in range(0,range_2):
         for j in range(0,range_1):
               dirs_keys.append(f'{j}_{k}_{i}')            
               
-#home = input("What is the directory that the folder water_escape_flares is placed?")
-#print(home)              
-              
+   
 ########################################################
 ############LOADING DATA #################################              
 ########################################################              
 
-path = './'#home+'/water_escape_flares/Data/'
-
-folder = path+'RG_flare.txt'
+path = './'
+folder = path+'flareRG.txt'
 WL_flare,WI_flare = np.genfromtxt(folder, usecols = (6,7), unpack=True)
 outputs_WI_flare = dict(zip(dirs_keys,WI_flare))
 outputs_WL_flare = dict(zip(dirs_keys,WL_flare))
 
-folder = path+'stop_flare.txt'
-WL_flare,WI_flare = np.genfromtxt(folder,usecols = (6,7), unpack=True)
-outputs_WI_flare_stop = dict(zip(dirs_keys,WI_flare))
-outputs_WL_flare_stop = dict(zip(dirs_keys,WL_flare))
-
-folder = path+'stop_stellar.txt'
-WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
-outputs_WI_stellar_stop = dict(zip(dirs_keys,WI_stellar))
-outputs_WL_stellar_stop = dict(zip(dirs_keys,WL_stellar))
-
-folder = path+'RG_stellar.txt'
+folder = path+'stellarRG.txt'
 WL_stellar,WI_stellar = np.genfromtxt(folder,usecols = (6,7), unpack=True)
 outputs_WI_stellar = dict(zip(dirs_keys,WI_stellar))
 outputs_WL_stellar = dict(zip(dirs_keys,WL_stellar))
@@ -83,21 +70,6 @@ for ik in keys.keys():
 
 ##################################################
 
-water_esc_flare_stop = {}
-for ik in keys.keys():
-        water_esc_flare_stop[ik] = outputs_WI_flare_stop[ik]-outputs_WL_flare_stop[ik]
-
-water_escP_flare_stop = {}
-for ik in keys.keys():
-        water_escP_flare_stop[ik] = (water_esc_flare_stop[ik]*100)/outputs_WI_flare_stop[ik]
- 
-water_esc_stellar_stop = {}
-for ik in keys.keys():
-        water_esc_stellar_stop[ik] = outputs_WI_stellar_stop[ik]-outputs_WL_stellar_stop[ik]
-
-water_escP_stellar_stop = {}
-for ik in keys.keys():
-        water_escP_stellar_stop[ik] = (water_esc_stellar_stop[ik]*100)/outputs_WI_stellar_stop[ik]
 
 ######################################################
 Masses = [0.2,0.225,0.25,0.275,0.3,0.325,0.35,0.375,0.4,0.425,0.45,0.475,0.5,0.525,0.55,0.575,0.6]
