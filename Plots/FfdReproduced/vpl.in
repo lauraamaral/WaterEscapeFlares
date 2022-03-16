@@ -2,7 +2,7 @@
 sSystemName               FFD
 iVerbose                  5
 bOverwrite                1
-saBodyFiles               1000.in
+saBodyFiles               star.in #10.in 100.in 1000.in
 sUnitMass                 solar
 sUnitLength               AU
 sUnitTime                 YEARS

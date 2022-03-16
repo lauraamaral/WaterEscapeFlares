@@ -1,7 +1,7 @@
 -------- Log file flare.log -------
 
-Executable: /home/laura/anaconda3/bin/vplanet
-Version: Unknown
+Executable: vplanet
+Version: v1.0.0-1572-g022268cb993c17a73724294739739d60803a6ef6
 System Name: flare
 Primary Input File: vpl.in
 Body File #1: star.in
@@ -83,7 +83,7 @@ Color: 000000
 (HZLimRunaway) Runaway Greenhouse HZ Limit [AU]: 0.8411794666 
 (HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 1.2565631766e+11 
 (HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [AU]: 1.5612628066 
-(HZLimEarlyMars) Early Mars HZ Limit [AUM]: 1.7028431920 
+(HZLimEarlyMars) Early Mars HZ Limit [AU]: 1.7028431920 
 (Instellation) Orbit-averaged INcident STELLar radiATION [W/m^2]: 9457.4653603579 
 (MeanMotion) Orbital Mean Motion [/sec]: 8.3696800609e-07 
 (OrbPeriod) Orbital Period [sec]: 7.5070794361e+06 
@@ -114,7 +114,7 @@ Color: 000000
 (RRCriticalFlux) Critical XUV Flux that separates RR and energy-limited escape [W/m^2]: 134.0014969870 
 (KTide) Mass loss enhancement due to stellar gravity []: 0.9826314179 
 (RGDuration) Runaway Greenhouse Duration [years]: 0.00000e+00
-Output Order: Time[year] Age[year] XO[] SurfWaterMass[TO] EnvelopeMass[Mearth] OxygenMass[bars] PlanetRadius[Rearth] HZLimRunaway[AU] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AUM] FXUV[W/m^2] Instellation[W/m^2] RGLimit[AU]
+Output Order: Time[year] Age[year] XO[] SurfWaterMass[TO] EnvelopeMass[Mearth] OxygenMass[bars] PlanetRadius[Rearth] HZLimRunaway[AU] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AU] FXUV[W/m^2] Instellation[W/m^2] RGLimit[AU]
 Grid Output Order:
 
 
@@ -176,7 +176,7 @@ Color: 000000
 (HZLimRunaway) Runaway Greenhouse HZ Limit [AU]: 0.1876772178 
 (HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.8062639779e+10 
 (HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [AU]: 0.3505773306 
-(HZLimEarlyMars) Early Mars HZ Limit [AUM]: 0.3823607275 
+(HZLimEarlyMars) Early Mars HZ Limit [AU]: 0.3823607275 
 (Instellation) Orbit-averaged INcident STELLar radiATION [W/m^2]: 468.6169905509 
 (MeanMotion) Orbital Mean Motion [/sec]: 8.3696800520e-07 
 (OrbPeriod) Orbital Period [sec]: 7.5070794441e+06 
@@ -207,5 +207,5 @@ Color: 000000
 (RRCriticalFlux) Critical XUV Flux that separates RR and energy-limited escape [W/m^2]: 167.5621347129 
 (KTide) Mass loss enhancement due to stellar gravity []: 0.9838653991 
 (RGDuration) Runaway Greenhouse Duration [years]: 1.47500e+07
-Output Order: Time[year] Age[year] XO[] SurfWaterMass[TO] EnvelopeMass[Mearth] OxygenMass[bars] PlanetRadius[Rearth] HZLimRunaway[AU] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AUM] FXUV[W/m^2] Instellation[W/m^2] RGLimit[AU]
+Output Order: Time[year] Age[year] XO[] SurfWaterMass[TO] EnvelopeMass[Mearth] OxygenMass[bars] PlanetRadius[Rearth] HZLimRunaway[AU] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AU] FXUV[W/m^2] Instellation[W/m^2] RGLimit[AU]
 Grid Output Order:

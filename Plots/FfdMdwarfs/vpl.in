@@ -1,8 +1,8 @@
 #
-sSystemName          FFD02
+sSystemName          FFD
 iVerbose                    5
 bOverwrite               1
-saBodyFiles              star02.in
+saBodyFiles              star02.in star04.in star06.in
 sUnitMass                solar
 sUnitLength            AU
 sUnitTime                YEARS

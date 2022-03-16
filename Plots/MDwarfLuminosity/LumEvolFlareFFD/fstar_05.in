@@ -7,8 +7,8 @@ dAge                1e6     # Assume star is 1 Myr old when disk disperses
 dRadGyra      0.5
 
 # FLARE Parameters
-dFlareMinEnergy           1.0e26 # Lower energy of flares in Joules
-dFlareMaxEnergy           1.0e29 # Higher energy of flares in Joules
+dFlareMinEnergy           -1.0e33 # Lower energy of flares in ergs
+dFlareMaxEnergy           -1.0e36 # Higher energy of flares in ergs
 sFlareFFD                DAVENPORT #Flare mode to calculate the XUV luminosity. The options are DAVENPORT, LACY and OBSERV
 
 

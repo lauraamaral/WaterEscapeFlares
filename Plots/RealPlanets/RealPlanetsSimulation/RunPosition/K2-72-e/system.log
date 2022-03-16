@@ -1,7 +1,7 @@
 -------- Log file system.log -------
 
-Executable: /home/laura/anaconda3/bin/vplanet
-Version: Unknown
+Executable: vplanet
+Version: v1.0.0-1572-g022268cb993c17a73724294739739d60803a6ef6
 System Name: system
 Primary Input File: vpl.in
 Body File #1: star.in
@@ -83,7 +83,7 @@ Color: 000000
 (HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 1.4545545365e+10 
 (HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 1.4571884583e+10 
 (HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [AU]: 0.1839833028 
-(HZLimEarlyMars) Early Mars HZ Limit [AUM]: 0.2006563718 
+(HZLimEarlyMars) Early Mars HZ Limit [AU]: 0.2006563718 
 (Instellation) Orbit-averaged INcident STELLar radiATION [W/m^2]: 1365.0706941442 
 (MeanMotion) Orbital Mean Motion [/sec]: 3.7666894098e-06 
 (OrbPeriod) Orbital Period [sec]: 1.6680922220e+06 
@@ -114,7 +114,7 @@ Color: 000000
 (RRCriticalFlux) Critical XUV Flux that separates RR and energy-limited escape [W/m^2]: 125.6332210285 
 (KTide) Mass loss enhancement due to stellar gravity []: 0.9547202748 
 (RGDuration) Runaway Greenhouse Duration [years]: 0.00000e+00
-Output Order: Time[year] Age[year] HZLimRunaway[au] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AUM] Instellation[W/m^2] RGLimit[AU]
+Output Order: Time[year] Age[year] HZLimRunaway[au] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AU] Instellation[W/m^2] RGLimit[AU]
 Grid Output Order:
 
 
@@ -176,7 +176,7 @@ Color: 000000
 (HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 1.4562661709e+10 
 (HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 1.4588958109e+10 
 (HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [AU]: 0.1841948599 
-(HZLimEarlyMars) Early Mars HZ Limit [AUM]: 0.2008871122 
+(HZLimEarlyMars) Early Mars HZ Limit [AU]: 0.2008871122 
 (Instellation) Orbit-averaged INcident STELLar radiATION [W/m^2]: 1368.3035080650 
 (MeanMotion) Orbital Mean Motion [/sec]: 3.7666894077e-06 
 (OrbPeriod) Orbital Period [sec]: 1.6680922230e+06 
@@ -207,5 +207,5 @@ Color: 000000
 (RRCriticalFlux) Critical XUV Flux that separates RR and energy-limited escape [W/m^2]: 127.8063599111 
 (KTide) Mass loss enhancement due to stellar gravity []: 0.9549709407 
 (RGDuration) Runaway Greenhouse Duration [years]: 0.00000e+00
-Output Order: Time[year] Age[year] HZLimRunaway[au] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AUM] Instellation[W/m^2] RGLimit[AU]
+Output Order: Time[year] Age[year] HZLimRunaway[au] HZLimMaxGreenhouse[AU] HZLimRecVenus[AU] HZLimEarlyMars[AU] Instellation[W/m^2] RGLimit[AU]
 Grid Output Order:

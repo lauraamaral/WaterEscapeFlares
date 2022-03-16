@@ -19,6 +19,20 @@ from collections import OrderedDict
 import sys
 import os
 import subprocess
+
+
+# Check correct number of arguments
+if (len(sys.argv) != 2):
+    print('ERROR: Incorrect number of arguments.')
+    print('Usage: '+sys.argv[0]+' <pdf | png>')
+    exit(1)
+if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
+    print('ERROR: Unknown file format: '+sys.argv[1])
+    print('Options are: pdf, png')
+    exit(1)
+
+
+
 plt.style.use('ggplot')
 
 f1 = './rgstellar.txt'

@@ -18,6 +18,16 @@ from matplotlib.ticker import MaxNLocator
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
+# Check correct number of arguments
+if (len(sys.argv) != 2):
+    print('ERROR: Incorrect number of arguments.')
+    print('Usage: '+sys.argv[0]+' <pdf | png>')
+    exit(1)
+if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
+    print('ERROR: Unknown file format: '+sys.argv[1])
+    print('Options are: pdf, png')
+    exit(1)
+
 folder_name1_star = './HabZone/star'
 range_1 = 19
 folders_stellar = []
@@ -118,5 +128,8 @@ plt.xlim(0,0.7)
 plt.ylim(0.19,0.61)
 ax.legend(handles=legend_elements, loc='lower right', fontsize=17.5,ncol=1)
 
-#mpl.rcParams['font.size'] = 70
-plt.savefig('HZ.pdf', bbox_inches="tight", dpi=400)
+# Save figure
+if (sys.argv[1] == 'pdf'):
+    fig.savefig('HZ.pdf', bbox_inches="tight", dpi=400)
+if (sys.argv[1] == 'png'):
+    fig.savefig('HZ.png', bbox_inches="tight", dpi=250)

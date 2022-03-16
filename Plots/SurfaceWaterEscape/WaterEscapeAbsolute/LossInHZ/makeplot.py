@@ -18,6 +18,19 @@ from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
 import matplotlib.colors as colors
 
+
+
+# Check correct number of arguments
+if (len(sys.argv) != 2):
+    print('ERROR: Incorrect number of arguments.')
+    print('Usage: '+sys.argv[0]+' <pdf | png>')
+    exit(1)
+if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
+    print('ERROR: Unknown file format: '+sys.argv[1])
+    print('Options are: pdf, png')
+    exit(1)
+
+
 #NÚMERO DE ESTRELAS SIMULADAS
 range_1 = 17
 #NÚMERO DE OCEANOS SIMULADOS
@@ -279,4 +292,8 @@ for ax in axes.flatten():
 axes[4,0].xaxis.set_major_locator(MaxNLocator(10)) 
 axes[0,0].yaxis.set_major_locator(MaxNLocator(4)) 
 
-plt.savefig('LossInHZ.pdf', bbox_inches="tight", dpi=300)
+# Save figure
+if (sys.argv[1] == 'pdf'):
+    fig.savefig('LossInHZ.pdf', bbox_inches="tight", dpi=300)
+if (sys.argv[1] == 'png'):
+    fig.savefig('LossInHZ.png', bbox_inches="tight", dpi=250))

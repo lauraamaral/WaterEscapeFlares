@@ -1,6 +1,6 @@
 """
 This script produces a reproduction of Figure 10
-from Davenport+2019 (Figure 4 from Amaral+2021) ,
+from Davenport+2019 (Figure 4 from Amaral+2022) ,
 the flare frequency distribution of a 0.5 Msun star, 
 using VPLANET's STELLAR and FLARE modules.
 
@@ -23,11 +23,7 @@ import subprocess
 
 mpl.style.use('classic')
 
-M = np.loadtxt("./FFD.1.forward")
-N = np.loadtxt("./FFD.10.forward")
-O = np.loadtxt("./FFD.100.forward")
-P = np.loadtxt("./FFD.1000.forward")
-
+     
 
 try:
     import vplot as vpl
@@ -65,42 +61,54 @@ mpl.rcParams['xtick.bottom'] = True
 mpl.rcParams['ytick.right'] = True
 
 
-# Run the simulations
+
+data = np.loadtxt("./FFD.star.forward")
+age = data[:,0]
+
+print(age)
+
 Mdata = []
 Ndata = []
 Odata = []
 Pdata = []
 
-for i in range(0,9):
-          Mdata.append(M[0,i])
-          Ndata.append(N[0,i])
-          Odata.append(O[0,i])
-          Pdata.append(P[0,i])
+for idx, val in enumerate(age):
+    if val == (1e6):
+        Mdata = data[idx,:]
+        print(Mdata[5:9])
+    if val == (1e7):
+        Ndata = data[idx,:]
+        print(Ndata)
+    if val == (1e8):
+        Odata=data[idx,:]
+    if val == (1e9):
+        Pdata = data[idx,:]
+                     
 
 fig= plt.figure(figsize=(13,10))
 
 
 fp = [1,1,1,1]
-np.interp(Mdata[5:9], Mdata[1:5], fp)
-plt.plot(Mdata[5:9], Mdata[1:5], '-', color = "cornflowerblue", linewidth=2.5)
+np.interp(np.log10(Mdata[5:9]), Mdata[1:5], fp)
+plt.plot(np.log10(Mdata[5:9]), Mdata[1:5], '-', color = "cornflowerblue", linewidth=2.5)
 
-np.interp(Ndata[5:9], Ndata[1:5], fp)
-plt.plot(Ndata[5:9], Ndata[1:5], '-', color = "darkviolet", linewidth=2.5)
+np.interp(np.log10(Ndata[5:9]), Ndata[1:5], fp)
+plt.plot(np.log10(Ndata[5:9]), Ndata[1:5], '-', color = "darkviolet", linewidth=2.5)
 
-np.interp(Odata[5:9], Odata[1:5], fp)
-plt.plot(Odata[5:9], Odata[1:5], '-', color = "darkred", linewidth=2.5)
+np.interp(np.log10(Odata[5:9]), Odata[1:5], fp)
+plt.plot(np.log10(Odata[5:9]), Odata[1:5], '-', color = "darkred", linewidth=2.5)
 
-np.interp(Pdata[5:9], Pdata[1:5], fp)
-plt.plot(Pdata[5:9], Pdata[1:5], '-', color = "red", linewidth=2.5)
+np.interp(np.log10(Pdata[5:9]), Pdata[1:5], fp)
+plt.plot(np.log10(Pdata[5:9]), Pdata[1:5], '-', color = "red", linewidth=2.5)
 
 
 
 
 for i in range(1,5):
-           plt.plot(Mdata[i+4], Mdata[i], color = "cornflowerblue", linewidth=2, label='t')
-           plt.plot(Ndata[i+4], Ndata[i], color = "darkviolet", linewidth=2, label='t')
-           plt.plot(Odata[i+4], Odata[i], color = "darkred", linewidth=2, label='t')
-           plt.plot(Pdata[i+4], Pdata[i], color = "red", linewidth=2, label='t')                            
+           plt.plot(np.log10(Mdata[i+4]), Mdata[i], color = "cornflowerblue", linewidth=2, label='t')
+           plt.plot(np.log10(Ndata[i+4]), Ndata[i], color = "darkviolet", linewidth=2, label='t')
+           plt.plot(np.log10(Odata[i+4]), Odata[i], color = "darkred", linewidth=2, label='t')
+           plt.plot(np.log10(Pdata[i+4]), Pdata[i], color = "red", linewidth=2, label='t')                            
            
 plt.yscale('log')
 

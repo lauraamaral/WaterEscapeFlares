@@ -1,0 +1,13 @@
+#
+sName                     star
+saModules                 flare
+dMass                     0.5
+dAge                      1e6
+dFlareMinEnergy           -1.0e33
+dFlareMaxEnergy           -1.0e37
+
+sFlareFFD               DAVENPORT
+dEnergyBin                  4           
+
+saOutputOrder Age -FlareFreq1 -FlareFreq2 -FlareFreq3 -FlareFreq4 -FlareEnergy1 -FlareEnergy2 -FlareEnergy3 -FlareEnergy4
+

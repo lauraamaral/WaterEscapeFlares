@@ -10,9 +10,8 @@ sStellarModel             baraffe     # Stellar evolutin model: `baraffe` or `no
 dSatXUVFrac               1.e-3       # Saturation level of the XUV luminosity
 dRadGyra                  0.5
 
-
-dFlareMinEnergy           1.0e26
-dFlareMaxEnergy           1.0e29
+dFlareMinEnergy           -1.0e33
+dFlareMaxEnergy           -1.0e36
 sFlareFFD                 DAVENPORT
 sFlareBandPass            KEPLER
 

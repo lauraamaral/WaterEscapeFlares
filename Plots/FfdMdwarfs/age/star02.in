@@ -8,12 +8,10 @@ sStellarModel             baraffe
 bHaltEndBaraffeGrid       1
 dSatXUVFrac               1.e-3
 dSatXUVTime               -0.1
-dFlareMinEnergy           1.0e26.427161
-dFlareMaxEnergy           1.0e68.427161
+dFlareMinEnergy           -1.0e33.427161
+dFlareMaxEnergy           -1.0e75.427161
 sFlareFFD                DAVENPORT
 sFlareBandPass     KEPLER
 
-
-saOutputOrder Time Age FlareFreq1 FlareFreq2 FlareEnergy1 FlareEnergy2
-
+saOutputOrder Time Age -FlareFreq1 -FlareFreq2 -FlareEnergy1 -FlareEnergy2
 

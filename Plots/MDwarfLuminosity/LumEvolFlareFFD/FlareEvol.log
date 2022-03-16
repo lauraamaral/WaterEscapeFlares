@@ -1,7 +1,7 @@
 -------- Log file FlareEvol.log -------
 
 Executable: vplanet
-Version: v1.0.0-846-gd3fd82f09d92cc7f5fe1d510424b69db324c9020
+Version: v1.0.0-1572-g022268cb993c17a73724294739739d60803a6ef6
 System Name: FlareEvol
 Primary Input File: vpl.in
 Body File #1: fstar_02.in
@@ -10,7 +10,7 @@ Body File #3: fstar_04.in
 Body File #4: fstar_05.in
 Body File #5: fstar_06.in
 Allow files to be overwitten: Yes
-Mass Units: Kilograms
+Mass Units: Grams
 Length Units: Meters
 Time Units: Seconds
 Angle Units: Radians
@@ -37,60 +37,55 @@ Minimum Value of ecc and obl: 1.000000e-10
 (PotEnergy) Body's non-orbital Potential Energy [kg*m^2/sec^2]: -6.055739e+39 
 (KinEnergy) Body's non-orbital Kinetic Energy [kg*m^2/sec^2]: 2.258530e+38 
 (DeltaTime) Average Timestep Over Last Output Interval [sec]: 0.000000 
-(Density) Average Density [kg/m^3]: 1456.252683 
-(LongP) Body's Longitude of pericenter [rad]: 3.926991 
-(LXUVTot) Total XUV Luminosity [LSUN]: 0.000229 
 
 ----- BODY: fstar_02 ----
 Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 3.976832e+29 
-(Radius) Radius [Solar]: 1.503284 
-(RadGyra) Radius of Gyration []: 0.443129 
+(Radius) Radius [Rearth]: 163.972763 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.443129 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 6.211404e+42 
 (RotVel) Rotational Velocity [m/sec]: 7.605524e+04 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.272205e-05 
 (RotPer) Rotational Period [days]: 1.000000 
+(Density) Average Density [kg/m^3]: 82.996451 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 6.366037e+10 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.946554e+11 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 2.567584e+11 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 2.575611e+11 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 4.892066e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 5.335333e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 1.946487e+11 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 2.567496e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.575522e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 4.891897e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 5.335149e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: -1.000000 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 0.000229 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.562685e-309 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.562685e-309 
 ----- STELLAR PARAMETERS (fstar_02)------
 (Luminosity) Luminosity [LSUN]: 0.219810 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 0.000220 
 (Temperature) Effective Temperature [K]: 3225.997303 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.001000 
+(LXUVFrac) Fraction of luminosity in XUV []: 0.001000 
 (RossbyNumber) Rossby Number []: 0.016607 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 2.221863e-09 
 ----- FLARE PARAMETERS (fstar_02)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 8.717114e-06 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.114472 
-(FlareFreq5) Flare frequency in flares/day []: 0.121832 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.156315 
-(FlareFreq2) Flare frequency in flares/day []: 0.146872 
-(FlareFreq3) Flare frequency in flares/day []: 0.138000 
-(FlareFreq4) Flare frequency in flares/day []: 0.129664 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 1.809199e-06 
+(FlareFreq2) Second value of flare frequency range [/sec]: 1.699911e-06 
+(FlareFreq3) Third value of flare frequency range [/sec]: 1.597226e-06 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 1.500743e-06 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 1.809199e-06 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 8.025762e-08 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 3.560297e-09 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_03 ----
@@ -98,51 +93,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 5.965248e+29 
-(Radius) Radius [Solar]: 1.636349 
-(RadGyra) Radius of Gyration []: 0.446096 
+(Radius) Radius [Rearth]: 178.487010 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.446096 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.118786e+43 
 (RotVel) Rotational Velocity [m/sec]: 8.278737e+04 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.272205e-05 
 (RotPer) Rotational Period [days]: 1.000000 
+(Density) Average Density [kg/m^3]: 96.526393 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 6.366037e+10 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.946554e+11 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 2.567584e+11 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 2.575611e+11 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 4.892066e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 5.335333e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 1.946487e+11 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 2.567496e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.575522e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 4.891897e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 5.335149e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 300.604579 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 0.000347 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.562685e-309 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.562685e-309 
 ----- STELLAR PARAMETERS (fstar_03)------
 (Luminosity) Luminosity [LSUN]: 0.332052 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 0.000332 
 (Temperature) Effective Temperature [K]: 3428.040941 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.001000 
+(LXUVFrac) Fraction of luminosity in XUV []: 0.001000 
 (RossbyNumber) Rossby Number []: 0.018417 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 1.313769e-09 
 ----- FLARE PARAMETERS (fstar_03)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 1.476715e-05 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.145395 
-(FlareFreq5) Flare frequency in flares/day []: 0.153900 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.193197 
-(FlareFreq2) Flare frequency in flares/day []: 0.182520 
-(FlareFreq3) Flare frequency in flares/day []: 0.172433 
-(FlareFreq4) Flare frequency in flares/day []: 0.162903 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 2.236074e-06 
+(FlareFreq2) Second value of flare frequency range [/sec]: 2.112498e-06 
+(FlareFreq3) Third value of flare frequency range [/sec]: 1.995751e-06 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 1.885455e-06 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 2.236074e-06 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 1.303126e-07 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 7.594274e-09 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_04 ----
@@ -150,51 +143,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 7.953664e+29 
-(Radius) Radius [Solar]: 1.754951 
-(RadGyra) Radius of Gyration []: 0.447490 
+(Radius) Radius [Rearth]: 191.423686 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.447490 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.726530e+43 
 (RotVel) Rotational Velocity [m/sec]: 8.878777e+04 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.272205e-05 
 (RotPer) Rotational Period [days]: 1.000000 
+(Density) Average Density [kg/m^3]: 104.332025 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 6.366037e+10 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.946554e+11 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 2.567584e+11 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 2.575611e+11 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 4.892066e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 5.335333e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 1.946487e+11 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 2.567496e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.575522e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 4.891897e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 5.335149e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 300.604579 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 0.000509 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.562685e-309 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.562685e-309 
 ----- STELLAR PARAMETERS (fstar_04)------
 (Luminosity) Luminosity [LSUN]: 0.483089 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 0.000483 
 (Temperature) Effective Temperature [K]: 3634.101057 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.001000 
+(LXUVFrac) Fraction of luminosity in XUV []: 0.001000 
 (RossbyNumber) Rossby Number []: 0.020468 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 9.912182e-10 
 ----- FLARE PARAMETERS (fstar_04)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 2.559894e-05 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.184672 
-(FlareFreq5) Flare frequency in flares/day []: 0.194411 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.238781 
-(FlareFreq2) Flare frequency in flares/day []: 0.226819 
-(FlareFreq3) Flare frequency in flares/day []: 0.215457 
-(FlareFreq4) Flare frequency in flares/day []: 0.204663 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 2.763670e-06 
+(FlareFreq2) Second value of flare frequency range [/sec]: 2.625223e-06 
+(FlareFreq3) Third value of flare frequency range [/sec]: 2.493712e-06 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 2.368788e-06 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 2.763670e-06 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 2.115857e-07 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 1.619893e-08 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_05 ----
@@ -202,51 +193,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 9.942080e+29 
-(Radius) Radius [Solar]: 1.877257 
-(RadGyra) Radius of Gyration []: 0.448431 
+(Radius) Radius [Rearth]: 204.764380 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.448431 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 2.479854e+43 
 (RotVel) Rotational Velocity [m/sec]: 9.497556e+04 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.272205e-05 
 (RotPer) Rotational Period [days]: 1.000000 
+(Density) Average Density [kg/m^3]: 106.549505 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 6.366037e+10 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.946554e+11 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 2.567584e+11 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 2.575611e+11 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 4.892066e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 5.335333e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 1.946487e+11 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 2.567496e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.575522e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 4.891897e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 5.335149e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 300.604579 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 0.000708 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.562685e-309 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.562685e-309 
 ----- STELLAR PARAMETERS (fstar_05)------
 (Luminosity) Luminosity [LSUN]: 0.662912 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 0.000663 
 (Temperature) Effective Temperature [K]: 3802.690677 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.001000 
+(LXUVFrac) Fraction of luminosity in XUV []: 0.001000 
 (RossbyNumber) Rossby Number []: 0.022316 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 7.731889e-10 
 ----- FLARE PARAMETERS (fstar_05)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 4.533349e-05 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.234558 
-(FlareFreq5) Flare frequency in flares/day []: 0.245584 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.295121 
-(FlareFreq2) Flare frequency in flares/day []: 0.281871 
-(FlareFreq3) Flare frequency in flares/day []: 0.269215 
-(FlareFreq4) Flare frequency in flares/day []: 0.257128 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 3.415751e-06 
+(FlareFreq2) Second value of flare frequency range [/sec]: 3.262393e-06 
+(FlareFreq3) Third value of flare frequency range [/sec]: 3.115920e-06 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 2.976023e-06 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 3.415751e-06 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 3.435471e-07 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 3.455304e-08 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_06 ----
@@ -254,51 +243,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 1.193050e+30 
-(Radius) Radius [Solar]: 1.981071 
-(RadGyra) Radius of Gyration []: 0.448904 
+(Radius) Radius [Rearth]: 216.088035 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.448904 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 3.321052e+43 
 (RotVel) Rotational Velocity [m/sec]: 1.002278e+05 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.272205e-05 
 (RotPer) Rotational Period [days]: 1.000000 
+(Density) Average Density [kg/m^3]: 108.793703 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 6.366037e+10 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.946554e+11 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 2.567584e+11 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 2.575611e+11 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 4.892066e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 5.335333e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 1.946487e+11 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 2.567496e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 2.575522e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 4.891897e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 5.335149e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 300.604579 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 0.000946 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.562685e-309 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.562685e-309 
 ----- STELLAR PARAMETERS (fstar_06)------
 (Luminosity) Luminosity [LSUN]: 0.864128 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 0.000864 
 (Temperature) Effective Temperature [K]: 3955.915442 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.001000 
+(LXUVFrac) Fraction of luminosity in XUV []: 0.001000 
 (RossbyNumber) Rossby Number []: 0.024141 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 6.368520e-10 
 ----- FLARE PARAMETERS (fstar_06)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 8.185049e-05 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.297920 
-(FlareFreq5) Flare frequency in flares/day []: 0.310227 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.364754 
-(FlareFreq2) Flare frequency in flares/day []: 0.350284 
-(FlareFreq3) Flare frequency in flares/day []: 0.336388 
-(FlareFreq4) Flare frequency in flares/day []: 0.323043 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 4.221689e-06 
+(FlareFreq2) Second value of flare frequency range [/sec]: 4.054210e-06 
+(FlareFreq3) Third value of flare frequency range [/sec]: 3.893375e-06 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 3.738921e-06 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 4.221689e-06 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 5.578100e-07 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 7.370319e-08 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 
@@ -311,60 +298,55 @@ Grid Output Order:
 (PotEnergy) Body's non-orbital Potential Energy [kg*m^2/sec^2]: -4.195159e+40 
 (KinEnergy) Body's non-orbital Kinetic Energy [kg*m^2/sec^2]: 5.157535e+36 
 (DeltaTime) Average Timestep Over Last Output Interval [sec]: 1.148209e+07 
-(Density) Average Density [kg/m^3]: 4.841508e+05 
-(LongP) Body's Longitude of pericenter [rad]: 3.926991 
-(LXUVTot) Total XUV Luminosity [LSUN]: 8.157626e-07 
 
 ----- BODY: fstar_02 ----
 Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 3.976832e+29 
-(Radius) Radius [Solar]: 0.217000 
-(RadGyra) Radius of Gyration []: 0.460200 
+(Radius) Radius [Rearth]: 23.669572 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.460200 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.407126e+41 
 (RotVel) Rotational Velocity [m/sec]: 1.106677e+04 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 7.330593e-05 
 (RotPer) Rotational Period [days]: 0.992035 
+(Density) Average Density [kg/m^3]: 2.759329e+04 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 9.383085e+09 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 4.504894e+10 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 5.944011e+10 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 5.960713e+10 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 1.130653e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 1.233104e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 4.504746e+10 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 5.943817e+10 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 5.960518e+10 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 1.130616e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 1.233064e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: -1.000000 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 8.157626e-07 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 3.609288e+40 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 6.024854e+42 
 ----- STELLAR PARAMETERS (fstar_02)------
 (Luminosity) Luminosity [LSUN]: 0.004775 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 2.811901e-07 
 (Temperature) Effective Temperature [K]: 3261.001511 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 5.888437e-05 
+(LXUVFrac) Fraction of luminosity in XUV []: 5.888437e-05 
 (RossbyNumber) Rossby Number []: 0.016773 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 4.256709e-12 
 ----- FLARE PARAMETERS (fstar_02)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 5.345626e-07 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.013403 
-(FlareFreq5) Flare frequency in flares/day []: 0.014473 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.019679 
-(FlareFreq2) Flare frequency in flares/day []: 0.018224 
-(FlareFreq3) Flare frequency in flares/day []: 0.016876 
-(FlareFreq4) Flare frequency in flares/day []: 0.015629 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 2.277646e-07 
+(FlareFreq2) Second value of flare frequency range [/sec]: 2.109241e-07 
+(FlareFreq3) Third value of flare frequency range [/sec]: 1.953288e-07 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 1.808865e-07 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 2.277646e-07 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 4.891998e-09 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 1.050718e-10 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_03 ----
@@ -372,51 +354,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 5.965248e+29 
-(Radius) Radius [Solar]: 0.291000 
-(RadGyra) Radius of Gyration []: 0.458000 
+(Radius) Radius [Rearth]: 31.741224 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.458000 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.996980e+41 
 (RotVel) Rotational Velocity [m/sec]: 7883.141407 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 3.893896e-05 
 (RotPer) Rotational Period [days]: 1.867591 
+(Density) Average Density [kg/m^3]: 1.716307e+04 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 9.383085e+09 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 4.504894e+10 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 5.944011e+10 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 5.960713e+10 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 1.130653e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 1.233104e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 4.504746e+10 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 5.943817e+10 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 5.960518e+10 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 1.130616e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 1.233064e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 6.530532 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 1.456584e-06 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.823130e+40 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 1.091192e+43 
 ----- STELLAR PARAMETERS (fstar_03)------
 (Luminosity) Luminosity [LSUN]: 0.010328 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 6.081350e-07 
 (Temperature) Effective Temperature [K]: 3415.002296 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 5.888437e-05 
+(LXUVFrac) Fraction of luminosity in XUV []: 5.888437e-05 
 (RossbyNumber) Rossby Number []: 0.034167 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 1.094670e-11 
 ----- FLARE PARAMETERS (fstar_03)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 8.484333e-07 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.017024 
-(FlareFreq5) Flare frequency in flares/day []: 0.018283 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.024322 
-(FlareFreq2) Flare frequency in flares/day []: 0.022647 
-(FlareFreq3) Flare frequency in flares/day []: 0.021087 
-(FlareFreq4) Flare frequency in flares/day []: 0.019635 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 2.815051e-07 
+(FlareFreq2) Second value of flare frequency range [/sec]: 2.621176e-07 
+(FlareFreq3) Third value of flare frequency range [/sec]: 2.440654e-07 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 2.272565e-07 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 2.815051e-07 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 7.943031e-09 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 2.241229e-10 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_04 ----
@@ -424,51 +404,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 7.953664e+29 
-(Radius) Radius [Solar]: 0.372010 
-(RadGyra) Radius of Gyration []: 0.450361 
+(Radius) Radius [Rearth]: 40.577554 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.450361 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.627908e+41 
 (RotVel) Rotational Velocity [m/sec]: 3899.097798 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 1.506562e-05 
 (RotPer) Rotational Period [days]: 4.827021 
+(Density) Average Density [kg/m^3]: 1.095335e+04 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 9.383085e+09 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 4.504894e+10 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 5.944011e+10 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 5.960713e+10 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 1.130653e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 1.233104e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 4.504746e+10 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 5.943817e+10 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 5.960518e+10 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 1.130616e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 1.233064e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 6.530532 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 2.503784e-06 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 7.771706e+40 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 1.701261e+43 
 ----- STELLAR PARAMETERS (fstar_04)------
 (Luminosity) Luminosity [LSUN]: 0.019080 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 1.123491e-06 
 (Temperature) Effective Temperature [K]: 3520.002728 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 5.888437e-05 
+(LXUVFrac) Fraction of luminosity in XUV []: 5.888437e-05 
 (RossbyNumber) Rossby Number []: 0.093190 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 4.138677e-11 
 ----- FLARE PARAMETERS (fstar_04)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 1.380266e-06 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.021622 
-(FlareFreq5) Flare frequency in flares/day []: 0.023095 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.030061 
-(FlareFreq2) Flare frequency in flares/day []: 0.028144 
-(FlareFreq3) Flare frequency in flares/day []: 0.026349 
-(FlareFreq4) Flare frequency in flares/day []: 0.024668 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 3.479255e-07 
+(FlareFreq2) Second value of flare frequency range [/sec]: 3.257364e-07 
+(FlareFreq3) Third value of flare frequency range [/sec]: 3.049624e-07 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 2.855132e-07 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 3.479255e-07 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 1.289693e-08 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 4.780642e-10 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_05 ----
@@ -476,51 +454,49 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 9.942080e+29 
-(Radius) Radius [Solar]: 0.460000 
-(RadGyra) Radius of Gyration []: 0.421689 
+(Radius) Radius [Rearth]: 50.175131 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.421689 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 9.871471e+40 
 (RotVel) Rotational Velocity [m/sec]: 1744.778205 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 5.452057e-06 
 (RotPer) Rotational Period [days]: 13.338461 
+(Density) Average Density [kg/m^3]: 7241.843562 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 9.383085e+09 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 4.504894e+10 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 5.944011e+10 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 5.960713e+10 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 1.130653e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 1.233104e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 4.504746e+10 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 5.943817e+10 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 5.960518e+10 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 1.130616e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 1.233064e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 6.530532 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 4.352689e-06 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 9.419230e+40 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 2.456113e+43 
 ----- STELLAR PARAMETERS (fstar_05)------
 (Luminosity) Luminosity [LSUN]: 0.034834 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 2.051162e-06 
 (Temperature) Effective Temperature [K]: 3680.001536 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 5.888437e-05 
+(LXUVFrac) Fraction of luminosity in XUV []: 5.888437e-05 
 (RossbyNumber) Rossby Number []: 0.279512 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 2.980814e-11 
 ----- FLARE PARAMETERS (fstar_05)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 2.301481e-06 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.027463 
-(FlareFreq5) Flare frequency in flares/day []: 0.029174 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.037154 
-(FlareFreq2) Flare frequency in flares/day []: 0.034974 
-(FlareFreq3) Flare frequency in flares/day []: 0.032923 
-(FlareFreq4) Flare frequency in flares/day []: 0.030992 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 4.300176e-07 
+(FlareFreq2) Second value of flare frequency range [/sec]: 4.047960e-07 
+(FlareFreq3) Third value of flare frequency range [/sec]: 3.810538e-07 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 3.587040e-07 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 4.300176e-07 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 2.094046e-08 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 1.019732e-09 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:
 
 ----- BODY: fstar_06 ----
@@ -528,49 +504,47 @@ Active Modules: FLARE STELLAR
 Module Bit Sum: 577
 Color: 000000
 (Mass) Mass [kg]: 1.193050e+30 
-(Radius) Radius [Solar]: 0.554000 
-(RadGyra) Radius of Gyration []: 0.390388 
+(Radius) Radius [Rearth]: 60.428309 
+(RadGyra) Radius of Gyration/Moment of Inertia Constant []: 0.390388 
 (RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.129033e+41 
 (RotVel) Rotational Velocity [m/sec]: 1611.104022 
 (BodyType) Type of Body (0 == planet) []: 0.000000 
 (RotRate) Rotational Frequency [/sec]: 4.180149e-06 
 (RotPer) Rotational Period [days]: 17.396998 
+(Density) Average Density [kg/m^3]: 4974.788090 
 (HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 9.383085e+09 
-(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 4.504894e+10 
-(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 5.944011e+10 
-(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 5.960713e+10 
-(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 1.130653e+11 
-(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 1.233104e+11 
+(HZLimRecVenus) Recent Venus HZ Limit [m]: 4.504746e+10 
+(HZLimRunaway) Runaway Greenhouse HZ Limit [m]: 5.943817e+10 
+(HZLimMoistGreenhouse) Moist Greenhouse HZ Limit [m]: 5.960518e+10 
+(HZLimMaxGreenhouse) Maximum Greenhouse HZ Limit [m]: 1.130616e+11 
+(HZLimEarlyMars) Early Mars HZ Limit [m]: 1.233064e+11 
 (Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 6.530532 
 (CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.000000 
+(LXUVTot) Total XUV Luminosity [LSUN]: 7.957495e-06 
 (LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 1.076361e+41 
 (LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 3.291967e+43 
 ----- STELLAR PARAMETERS (fstar_06)------
 (Luminosity) Luminosity [LSUN]: 0.068391 
 (LXUVStellar) Base X-ray/XUV Luminosity [LSUN]: 4.027170e-06 
 (Temperature) Effective Temperature [K]: 3966.998169 
-(LXUVFrac) X-ray/XUV Luminosity Fraction []: 5.888437e-05 
+(LXUVFrac) Fraction of luminosity in XUV []: 5.888437e-05 
 (RossbyNumber) Rossby Number []: 0.422369 
 (DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 2.149934e-11 
 ----- FLARE PARAMETERS (fstar_06)------
 (LXUVFlare) XUV Luminosity from flares [LSUN]: 3.930245e-06 
-(LXUVFlareUpper) Upper limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(LXUVFlareLower) Lower limit value to XUV Luminosity from flares when considerer flare rate slope and Y-intercept errors [kg*m^2/sec^3]: 0.000000 
-(FlareDuration1) Flare Duration in Seconds []: 0.000000 
-(FlareDuration2) Flare Duration in Seconds []: 0.000000 
-(FlareDuration3) Flare Duration in Seconds []: 0.000000 
-(FlareDuration4) Flare Duration in Seconds []: 0.000000 
-(FlareEnergy6) Flare energy in Joules []: 33.150000 
-(FlareFreq6) Flare frequency in flares/day []: 0.034882 
-(FlareFreq5) Flare frequency in flares/day []: 0.036854 
-(FlareEnergy5) Flare energy in Joules []: 33.120000 
-(FlareFreq1) Flare frequency in flares/day []: 0.045920 
-(FlareFreq2) Flare frequency in flares/day []: 0.043463 
-(FlareFreq3) Flare frequency in flares/day []: 0.041138 
-(FlareFreq4) Flare frequency in flares/day []: 0.038937 
-(FlareEnergy1) Flare energy in Joules []: 33.000000 
-(FlareEnergy2) Flare energy in Joules []: 33.030000 
-(FlareEnergy3) Flare energy in Joules []: 33.060000 
-(FlareEnergy4) Flare energy in Joules []: 33.090000 
-Output Order: Time[year] Luminosity[LSUN] Radius[Solar] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
+(FlareFreq1) First value of flare frequency range [/sec]: 5.314792e-07 
+(FlareFreq2) Second value of flare frequency range [/sec]: 5.030443e-07 
+(FlareFreq3) Third value of flare frequency range [/sec]: 4.761308e-07 
+(FlareFreq4) Fourth value of flare frequency range [/sec]: 4.506571e-07 
+(FlareFreqMin) Frequency of the flares with the lowest energy [/sec]: 5.314792e-07 
+(FlareFreqMid) Frequency of the flares with the middle energy in the energy range [/sec]: 3.400057e-08 
+(FlareFreqMax) Frequency of the flares with the highest energy [/sec]: 2.175135e-09 
+(FlareEnergy1) First value of flare energy range [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergy2) Second value of flare energy range [kg*m^2/sec^2]: 1.071519e+26 
+(FlareEnergy3) Third value of flare energy range [kg*m^2/sec^2]: 1.148154e+26 
+(FlareEnergy4) Fourth value of flare energy range [kg*m^2/sec^2]: 1.230269e+26 
+(FlareEnergyMin) Minimum flare energy [kg*m^2/sec^2]: 1.000000e+26 
+(FlareEnergyMid) Middle flare energy in the range of energy values [kg*m^2/sec^2]: 3.162278e+27 
+(FlareEnergyMax) Maximum flare energy [kg*m^2/sec^2]: 1.000000e+29 
+Output Order: Time[year] Luminosity[LSUN] Radius[Rearth] Temperature[K] RotPer[days] LXUVTot[LSUN] LXUVStellar[LSUN] LXUVFlare[LSUN] Age[year]
 Grid Output Order:

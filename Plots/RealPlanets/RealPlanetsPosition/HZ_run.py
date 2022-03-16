@@ -19,6 +19,8 @@ import subprocess
 import multiprocessing as mp
 from multiprocessing import Pool 
 
+
+
 #############################  criar pastas dentro de HZ_calculate com nome das massas estelares novas ###############################################
 
 #inputs = ['input_flare','input_stellar']

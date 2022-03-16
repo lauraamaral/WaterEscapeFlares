@@ -17,6 +17,18 @@ from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
 import matplotlib.colors as colors
 
+
+# Check correct number of arguments
+if (len(sys.argv) != 2):
+    print('ERROR: Incorrect number of arguments.')
+    print('Usage: '+sys.argv[0]+' <pdf | png>')
+    exit(1)
+if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
+    print('ERROR: Unknown file format: '+sys.argv[1])
+    print('Options are: pdf, png')
+    exit(1)
+
+
 #NÚMERO DE ESTRELAS SIMULADAS
 range_1 = 17
 #NÚMERO DE OCEANOS SIMULADOS
@@ -122,7 +134,7 @@ for i in range(0,10):
            
 X, Y = np.meshgrid(water_init,Masses)
 
-fig, axes = plt.subplots(figsize=(28,21), nrows=2, ncols=5, sharey=True ,sharex=True)
+fig, axes = plt.subplots(figsize=(38,21), nrows=2, ncols=5, sharey=True ,sharex=True)
 
 fig.text(0.5, -0.03, 'Initial Water Content (TO)', ha='center',  fontsize = 40)
 fig.text(-0.025, 0.5, 'Stellar Mass (M$_{\odot}$)', va='center', rotation='vertical', fontsize = 44)
@@ -279,4 +291,8 @@ ax.yaxis.set_major_locator(MaxNLocator(4))
 ax.xaxis.set_major_locator(MaxNLocator(5)) 
 
 
-plt.savefig('OxygenBuildUp.pdf', bbox_inches="tight", dpi=300)
+
+if (sys.argv[1] == 'pdf'):
+    fig.savefig('OxygenBuildUp.pdf', bbox_inches="tight", dpi=400)
+if (sys.argv[1] == 'png'):
+    fig.savefig('OxygenBuildUp.png', bbox_inches="tight", dpi=400)
